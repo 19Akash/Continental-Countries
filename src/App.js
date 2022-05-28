@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Continents from './Components/Continents/Continents';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Countries from './Components/Countries/Countries.js'
+import { useState } from 'react';
 
 function App() {
+  const [countriesDetails,setCountriesDetails] = useState();
+  const handleCountriesDetails=(value,)=>{
+     setCountriesDetails(value);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+     <Routes>
+       <Route exact path='/' element={<Continents  handleData={handleCountriesDetails}/>}/> 
+       <Route path='/details' element={<Countries data={countriesDetails}/>}/>
+     </Routes>
+   </Router>
+     
+   
   );
 }
 

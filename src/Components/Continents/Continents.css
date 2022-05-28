@@ -1,0 +1,41 @@
+.continentCart{
+    display: flex;
+    width: 40rem;
+    height: 8rem;
+    background-color: rgb(100, 151, 201);
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    place-items: center;
+    color: white;
+    box-shadow: 0rem 2rem 2rem rgb(180, 175, 175);
+    border-radius: 2rem;
+
+}
+.continentCart:hover{
+    background-color: rgb(142, 213, 189);
+    color: rgb(121, 118, 118);
+}
+
+.continents{
+    height: 100vh;
+    background-color: rgb(249, 249, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown> select{
+    height: 4rem;
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    margin-left: 2rem;
+}

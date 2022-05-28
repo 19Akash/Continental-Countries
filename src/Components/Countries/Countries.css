@@ -1,0 +1,53 @@
+.countriesCart{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 151, 201);
+    color: white;
+    box-shadow: 0rem 2rem 2rem rgb(180, 175, 175);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.countriesCart> h6{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    flex-wrap: wrap;
+}
+.countriesCart:hover{
+    background-color: rgb(142, 213, 189);
+    color: rgb(121, 118, 118);
+}
+
+.countries{
+    background-color: rgb(249, 249, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 249, 210);
+}
+.headerContent> h1{
+    margin-left: 4rem;  
+}
+.headerContent> button{
+    margin-left: 2rem;
+    background-color: rgb(44, 8, 60);
+    height: 2rem;
+    border: solid 2rem 2rem rgb(17, 9, 9);
+    border-radius: 2rem;
+    color: white;
+
+}
+.headerContent> button:hover{
+    box-shadow: 0rem 1rem 1rem rgb(51, 49, 49);
+    background-color: rgb(203, 174, 174);
+    color: black;
+}
